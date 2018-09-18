@@ -1,0 +1,9 @@
+---
+action: create
+volume: testvol
+distribute: 6
+replicate: 2
+disperse: "yes"
+disperse_count: 4
+redundancy_count: 2
+force: "yes"
