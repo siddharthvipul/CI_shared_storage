@@ -29,7 +29,7 @@
 # Prepare bricks on servers, based on the configuration generated
 - name: Prepare brick mounts
   hosts: servers
- gather_facts: false
+  gather_facts: false
   roles:
     - prepare-brick-mounts
   tags:
@@ -41,13 +41,6 @@
   gather_facts: false
   roles:
     - prepare-gluster-server
-
-# Run gluster sources installation on the clients
-#- name: Prepare Gluster clients
-#  hosts: clients
-#  gather_facts: false
-#  roles:
-#    - prepare-gluster-client
 
 - name: Prepare Gluster volume
   hosts: servers
