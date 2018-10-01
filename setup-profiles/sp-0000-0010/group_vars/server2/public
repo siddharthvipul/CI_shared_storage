@@ -1,8 +1,7 @@
 ---
 # All public variables for this host are defined here
 
-glusterip: host2-server
-confibipv4addr: 10.161.217.11
+glusterip: host2
 
 devices:
   - '/dev/sdb'
